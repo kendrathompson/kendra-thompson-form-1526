@@ -1,0 +1,92 @@
+/*COLOURS
+#DDD - grey
+#F5F5F5 - blue
+#6495ED - light grey
+*/
+
+/*mobile first*/
+body {
+	background-color: #fff;
+	font-size: 1rem;
+	font-family: 'Archivo Narrow', sans-serif;
+	line-height: 1.4;
+	text-decoration: none;
+}
+
+/*form background*/
+main {
+	background-color: #fff;
+  	padding: 1em;
+}
+
+fieldset {
+	background-color: #F5F5F5;
+	border: solid;
+	border-color: #DDD;
+}
+
+/*title*/
+legend {
+	font-size: 2rem;
+	background-color: #fff;
+	border: solid;
+	border-color: #DDD;
+	padding: 0 0.5em;
+}
+
+label {
+	display: block;
+}
+
+input, textarea {
+	display: inline-block;
+	width: 100%;
+	padding: 12px 20px;
+  	margin: 8px 0;
+  	box-sizing: border-box;
+}
+
+.child {
+	padding: 0.5em 0em;
+	width: 100%;
+}
+
+/*button*/
+#collect {
+	color: #fff;
+    background-color: #6495ED;
+    border-width: 0;
+    border-radius: 0.5em;
+    width: 100%;
+}
+
+/*desktop*/
+/*A0A3FF, 91ACE8, A6D9FF, 92DBE8, A0FFF3*/
+@media only screen and (min-width: 25rem) {
+
+	body {
+		line-height: 1.6;	
+	}
+	
+	main {
+		max-width: 50rem;
+		margin: 1rem auto;
+	}
+
+	/*flex*/
+	.parent {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.child:nth-child(1), .child:nth-child(2){
+		width: 48%;
+	}
+
+	#collect {
+		font-size: 1rem;
+		width: 30%;
+	}
+
+}
